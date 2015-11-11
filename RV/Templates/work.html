@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>平台交互</title>
+    <script src="/static/js/gateone.js"></script>
+    <script>
+        window.onload = function(){
+        // Initialize Gate One:
+        embedded: true,
+        GateOne.init({url: 'https://127.0.0.1:8000'});
+        }
+    </script>
+</head>
+<body>
+<p align="center">平台交互</p>
+<div id="pilot" style="align-content:center " align="center">平台交互</div>
+<div style="position:absolute;width:100%;height:100%;">
+<div id="left-pilot" style="position: relative; width: 20%; height: 100%;float:left;border:1px dashed;"></div>
+<div id="gateone_container"  style="backgroud-color:green;position: relative; width: 78%; height: 100%;float:right;">
+    <div id="gateone" ></div>
+    </div>
+</div>
+</body>
+</html>
